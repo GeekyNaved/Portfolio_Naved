@@ -2,8 +2,8 @@ import SocialLinksGroup from "./SocialLinksGroup";
 
 const HeroSection = () => {
   return (
-    <div className="relative bg-green-500 mx-auto text-center py-10">
-      <h1 className="text-4xl">Naved Khan</h1>
+    <div className="relative mx-auto text-center py-10">
+      <h1 className="text-4xl">Naved Ahmed Khan</h1>
       <p>Web and App Developer</p>
       <SocialLinksGroup />
       <a
