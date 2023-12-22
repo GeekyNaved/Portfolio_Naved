@@ -1,5 +1,5 @@
 import SocialLinksGroup from "./SocialLinksGroup";
-
+import myImg from "../assets/dev-ed-wave.png"
 const HeroSection = () => {
   return (
     <div className="relative mx-auto text-center py-10">
@@ -12,6 +12,7 @@ const HeroSection = () => {
       >
         Let&apos;s Chat
       </a>
+      <img src={myImg} className="bg-gradient-to-b from bg-teal-500 rounded-full mx-auto mt-20 w-66 h-56 relative overflow-hidden bg-cover" />
     </div>
   );
 };
