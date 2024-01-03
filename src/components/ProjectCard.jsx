@@ -2,7 +2,7 @@ import React from 'react'
 
 const ProjectCard = ({ title, description, link, image, techStack }) => {
     return (
-        <div className='bg-gradient-to-r from-cyan-500 text- to-teal-500 px-5 py-3 mt-8 rounded'>
+        <div className='bg-gradient-to-r from-cyan-500 text- to-teal-500 px-5 py-3 mt-8 rounded flex-1'>
             {image}
             <div className="pt-2 flex justify-between items-center">
                 <p className='text-gray-950 text-3xl font-extrabold pt-2'>
