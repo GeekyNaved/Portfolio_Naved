@@ -2,7 +2,7 @@ import { FaLinkedin, FaInstagramSquare, FaGithub } from "react-icons/fa";
 import { FaSquareXTwitter } from "react-icons/fa6";
 const SocialLinksGroup = () => {
   return (
-    <div className="flex items-center justify-center gap-5 text-3xl py-4 text-gray-500">
+    <div className="flex items-center justify-center gap-5 text-4xl md:text-5xl py-5 text-gray-400">
       <a href="https://www.linkedin.com/in/naved-ahmed-khan/" target="_blank">
         <FaLinkedin />
       </a>
