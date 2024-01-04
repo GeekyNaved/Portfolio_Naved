@@ -32,7 +32,7 @@ const ProjectsSection = () => {
     ]
     return (
         <div className="relative mx-auto py-10">
-            <h2 className="text-3xl font-semibold">My Recent Work</h2>
+            <h2 className="text-3xl font-semibold underline decoration-teal-400 underline-offset-8">My Recent Work</h2>
             <div className="grid md:grid-cols-3 gap-5">
                 {
                     projects?.map((item, key) => {

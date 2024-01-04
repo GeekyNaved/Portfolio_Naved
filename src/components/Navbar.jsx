@@ -3,7 +3,7 @@ import { FiDownload } from "react-icons/fi"
 const Navbar = () => {
   return (
     <div className="p-3 flex justify-between items-center">
-      <h4 className="text-3xl text-slate-100 font-serif">
+      <h4 className="text-3xl text-slate-100">
         <span className=" text-teal-400">
           N
         </span>

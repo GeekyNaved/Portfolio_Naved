@@ -2,7 +2,3 @@
 @tailwind components;
 @tailwind utilities;
 @import url('https://fonts.googleapis.com/css2?family=Montserrat&family=Quicksand&display=swap');
-
-body {
-  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-}
