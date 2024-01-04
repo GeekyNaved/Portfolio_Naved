@@ -18,7 +18,7 @@ const ProjectsSection = () => {
             id: 2,
             image: iFileVATImage,
             title: "iFileVAT",
-            description: "VAT Return Submission platform for the UK businesses, simplifies the process of submitting VAT returns to HMRC and accessing related information on liabilities and payments.",
+            description: "VAT Return Submission platform for the UK businesses, simplifies the process of submitting VAT returns to HMRC & accessing related information on liabilities & payments.A user-friendly web platform with a modern interface,streamlined navigation & optimised performance.",
             link: "https://ifilevat-web-app-test.vercel.app",
             techStack: "Web App",
         },
@@ -32,8 +32,8 @@ const ProjectsSection = () => {
     ]
     return (
         <div className="relative mx-auto py-10">
-            <h2 className="text-3xl">My Recent Work</h2>
-            <div className="grid sm:grid-cols-3 gap-5">
+            <h2 className="text-3xl font-semibold">My Recent Work</h2>
+            <div className="grid md:grid-cols-3 gap-5">
                 {
                     projects?.map((item, key) => {
                         return (
