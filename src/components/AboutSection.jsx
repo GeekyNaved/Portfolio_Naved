@@ -1,4 +1,4 @@
-import { MdEmail } from "react-icons/md"
+import Email from "./Email";
 const AboutSection = () => {
     return (
         <div className="relative mx-auto py-10">
@@ -7,15 +7,7 @@ const AboutSection = () => {
                 <p className="flex-1">I am extremely proficient in Front-End Development using HTML5, Cascade Style Sheets (CSS3), Bootstrap, Advance Javascript, React.Js & React Native And apart from Front-End, I have good knowledge in Back-End using Node JS, Express JS & MongoDB</p>
                 <div className="flex-1">
                     <h4 className="text-2xl">Any Type Of Query & Discussion</h4>
-                    <a
-                        href="mailto:navedahmed040@gmail.com"
-                        className="flex items-center gap-2 text-white"
-                    >
-                        <MdEmail />
-                        <p className="py-1">
-                            navedahmed040@gmail.com
-                        </p>
-                    </a>
+                    <Email className="py-2" />
                 </div>
             </div>
 

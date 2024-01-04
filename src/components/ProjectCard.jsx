@@ -19,8 +19,6 @@ const ProjectCard = ({ title, description, link, image, techStack }) => {
                 <a href={link} target='_blank' className='text-gray-900 underline font-semibold'>
                     {link ? "Live Link" : "In Progress"}
                 </a>
-
-
             </div>
         </div>
 
