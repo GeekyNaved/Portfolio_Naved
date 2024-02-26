@@ -1,4 +1,4 @@
-import Naved_Resume from "../Naved_Resume.pdf"
+import Naved_Ahmed_Khan_Resume from "../Naved_Ahmed_Khan_Resume.pdf"
 import { FiDownload } from "react-icons/fi"
 const Navbar = () => {
   return (
@@ -9,7 +9,7 @@ const Navbar = () => {
         </span>
         K
       </h4>
-      <a href={Naved_Resume} className="flex items-center gap-2 bg-gradient-to-r from-cyan-500 text- to-teal-500 text-white px-4 py-2 border-none rounded-md" download>
+      <a href={Naved_Ahmed_Khan_Resume} className="flex items-center gap-2 bg-gradient-to-r from-cyan-500 text- to-teal-500 text-white px-4 py-2 border-none rounded-md" download>
         <FiDownload />
         <button>
           Resume
