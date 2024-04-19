@@ -17,7 +17,7 @@ const ProjectCard = ({ title, description, link, image, techStack }) => {
             </p>
             {link && (
                 <div className="py-5">
-                    <a href={link} target='_blank' className='bg-gradient-to-r from-cyan-500 text- to-teal-500 text-white px-4 py-2 border-none rounded-md'>
+                    <a href={link} target='_blank' className='bg-gradient-to-r from-cyan-500 text- to-teal-500 text-white px-4 py-2 border-none rounded-md' rel="noreferrer">
                         Live Link
                     </a>
                 </div>
