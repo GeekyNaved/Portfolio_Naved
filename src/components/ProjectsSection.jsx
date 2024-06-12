@@ -1,8 +1,9 @@
 import ProjectCard from "./ProjectCard";
-import neutrelleImage from "../assets/neutrelle.jpg";
-import iFileVATImage from "../assets/ifilevat.jpg";
-import macTassosImage from "../assets/mactassos.jpg";
+import neutrelleImage from "../assets/neutrelle.png";
+import iFileVATImage from "../assets/ifilevat.png";
+import macTassosImage from "../assets/mactassos.png";
 import newsNerdImage from "../assets/newsNerd.png";
+import securePassImage from "../assets/securePass.png";
 
 const ProjectsSection = () => {
   const projects = [
@@ -39,6 +40,15 @@ const ProjectsSection = () => {
       description:
         "Powered by the Hacker News API, News Nerd delivers the latest and most relevant tech news straight to your fingertips. Say goodbye to clutter and distractions, and hello to a curated selection of tech updates presented in a clean and user-friendly interface. Stay ahead of the curve with News Nerd, your ultimate source for all things tech.",
       link: "https://news-nerd-beta.vercel.app",
+      techStack: "Web App",
+    },
+    {
+      id: 5,
+      image: securePassImage,
+      title: "Secure Pass",
+      description:
+        "Secure Pass is a modern web application designed for robust and secure password management. Built using the React JS framework, it offers a seamless user experience with a focus on both functionality and security. Utilizing the powerful Crypto JS library,It ensures that all sensitive data, such as passwords and personal information, are encrypted and protected.",
+      link: "https://securepass-mu.vercel.app",
       techStack: "Web App",
     },
   ];
