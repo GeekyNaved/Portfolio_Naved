@@ -4,6 +4,7 @@ import iFileVATImage from "../assets/ifilevat.png";
 import macTassosImage from "../assets/mactassos.png";
 import newsNerdImage from "../assets/newsNerd.png";
 import securePassImage from "../assets/securePass.png";
+import dentalImage from "../assets/dental.png";
 
 const ProjectsSection = () => {
   const projects = [
@@ -47,9 +48,18 @@ const ProjectsSection = () => {
       image: securePassImage,
       title: "Secure Pass",
       description:
-        "Secure Pass is a modern web application designed for robust and secure password management. Built using the React JS framework, it offers a seamless user experience with a focus on both functionality and security. Utilizing the powerful Crypto JS library,It ensures that all sensitive data, such as passwords and personal information, are encrypted and protected.",
+        "Secure Pass is a modern web application designed for robust and secure password management. Built using the React JS library, it offers a seamless user experience with a focus on both functionality and security. Utilizing the powerful Crypto JS library,It ensures that all sensitive data, such as passwords and personal information, are encrypted and protected.",
       link: "https://securepass-mu.vercel.app",
       techStack: "Web App",
+    },
+    {
+      id: 5,
+      image: dentalImage,
+      title: "Happy Dental",
+      description:
+        "Happy Dental is a responsive website built with Next.js and styled with Tailwind CSS. It offers a user-friendly experience with easy navigation through services, patient info, and contact details. Optimized for performance, it ensures fast loading times and accessibility, providing a professional online presence for dental practices.",
+      link: "https://happy-dental.vercel.app",
+      techStack: "Website",
     },
   ];
   return (
