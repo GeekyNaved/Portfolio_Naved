@@ -1,19 +1,18 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-@import url('https://fonts.googleapis.com/css2?family=Montserrat&family=Quicksand&display=swap');
 
 /* custom scroll bar */
 ::-webkit-scrollbar {
-    width: 10px;
+  width: 10px;
 }
 ::-webkit-scrollbar-track {
-    background: #f1f1f1;
+  background: #f1f1f1;
 }
 ::-webkit-scrollbar-thumb {
-    background: #14b8a6 ;
+  background: #14b8a6;
 }
 
 ::-webkit-scrollbar-thumb:hover {
-    background: #14b8a5a0;
+  background: #14b8a5a0;
 }
