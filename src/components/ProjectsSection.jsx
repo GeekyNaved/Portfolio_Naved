@@ -5,6 +5,7 @@ import macTassosImage from "../assets/mactassos.png";
 import newsNerdImage from "../assets/newsNerd.png";
 import securePassImage from "../assets/securePass.png";
 import dentalImage from "../assets/dental.png";
+import pathEdImage from "../assets/pathEd.png";
 
 const ProjectsSection = () => {
   const projects = [
@@ -60,6 +61,15 @@ const ProjectsSection = () => {
         "Happy Dental is a responsive website built with Next.js and styled with Tailwind CSS. It offers a user-friendly experience with easy navigation through services, patient info, and contact details. Optimized for performance, it ensures fast loading times and accessibility, providing a professional online presence for dental practices.",
       link: "https://happy-dental.vercel.app",
       techStack: "Website",
+    },
+    {
+      id: 6,
+      image: pathEdImage,
+      title: "PathEd",
+      description:
+        "PathEd is a React Native app designed as a comprehensive Learning Management System (LMS). It allows users to be tutors or learners, offering features like watching courses, purchasing them, adding to the cart or favorites, and signing in via Google. With a seamless user experience, PathEd provides a versatile platform for online learning and teaching, enhancing accessibility and engagement in the educational ecosystem.",
+      link: "https://www.mediafire.com/file/52372a6i7jyj7cr/PathEd-v3.apk/file",
+      techStack: "Mobile App",
     },
   ];
   return (
