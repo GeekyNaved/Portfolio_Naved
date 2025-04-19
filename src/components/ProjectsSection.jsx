@@ -19,23 +19,6 @@ const ProjectsSection = () => {
       techStack: "Web App",
     },
     {
-      id: 2,
-      image: iFileVATImage,
-      title: "iFileVAT",
-      description:
-        "VAT Return Submission platform for the UK businesses, simplifies the process of submitting VAT returns to HMRC & accessing related information on liabilities & payments.A user-friendly web platform with a modern interface,streamlined navigation & optimised performance.",
-      link: "https://ifilevat-web-app-test.vercel.app",
-      techStack: "Web App",
-    },
-    {
-      id: 3,
-      image: macTassosImage,
-      title: "MacTassos",
-      description:
-        "Developing a branded mobile app solved challenges by offering unique features, enhancing brand visibility, and eliminating high subscription costs from third-party platforms. It ensured a cost-effective solution, maintaining brand control and enhancing the customer experience.",
-      techStack: "Mobile App",
-    },
-    {
       id: 4,
       image: newsNerdImage,
       title: "News Nerd",
@@ -69,6 +52,23 @@ const ProjectsSection = () => {
       description:
         "PathEd is a React Native app designed as a comprehensive Learning Management System (LMS). It allows users to be tutors or learners, offering features like watching courses, purchasing them, adding to the cart or favorites, and signing in via Google. With a seamless user experience, PathEd provides a versatile platform for online learning and teaching, enhancing accessibility and engagement in the educational ecosystem.",
       link: "https://www.mediafire.com/file/52372a6i7jyj7cr/PathEd-v3.apk/file",
+      techStack: "Mobile App",
+    },
+    {
+      id: 2,
+      image: iFileVATImage,
+      title: "iFileVAT",
+      description:
+        "VAT Return Submission platform for the UK businesses, simplifies the process of submitting VAT returns to HMRC & accessing related information on liabilities & payments.A user-friendly web platform with a modern interface,streamlined navigation & optimised performance.",
+      // link: "https://ifilevat-web-app-test.vercel.app",
+      techStack: "Web App",
+    },
+    {
+      id: 3,
+      image: macTassosImage,
+      title: "MacTassos",
+      description:
+        "Developing a branded mobile app solved challenges by offering unique features, enhancing brand visibility, and eliminating high subscription costs from third-party platforms. It ensured a cost-effective solution, maintaining brand control and enhancing the customer experience.",
       techStack: "Mobile App",
     },
   ];

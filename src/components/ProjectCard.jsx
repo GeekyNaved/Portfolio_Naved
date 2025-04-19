@@ -1,30 +1,34 @@
-import React from 'react'
+import React from 'react';
 
 const ProjectCard = ({ title, description, link, image, techStack }) => {
     return (
-        <div className='bg-gray-50 shadow-lg px-5 py-5 mt-8 rounded flex-1'>
-            {image}
-            <div className="py-5 flex justify-between items-center">
-                <p className='text-gray-900 text-3xl font-bold'>
-                    {title}
-                </p>
-                <span className="inline-flex items-center rounded-md bg-gray-800  px-2 py-1 text-xs font-medium text-white ring-1 ring-inset ring-gray-500/10">
+        <div className='bg-white shadow-md hover:shadow-xl transition-all duration-300 rounded-2xl mt-8 p-4 flex flex-col h-full'>
+            <div className="w-full h-48 overflow-hidden rounded-xl">
+                {image}
+            </div>
+            <div className="py-4 flex justify-between items-start">
+                <h3 className='text-2xl font-semibold text-gray-900'>{title}</h3>
+                <span className="ml-2 inline-flex items-center rounded-full bg-gray-800 px-3 py-1 text-xs font-medium text-white">
                     {techStack}
                 </span>
             </div>
-            <p className='md:py-1 text-md md:text-xl text-gray-700 leading-8'>
+            <p className='text-gray-700 text-md leading-relaxed flex-1'>
                 {description}
             </p>
             {link && (
-                <div className="py-5">
-                    <a href={link} target='_blank' className='bg-gradient-to-r from-cyan-500 text- to-teal-500 text-white px-4 py-2 border-none rounded-md' rel="noreferrer">
-                        Live Link
+                <div className="pt-4 mt-auto">
+                    <a
+                        href={link}
+                        target='_blank'
+                        rel="noreferrer"
+                        className='inline-block bg-gradient-to-r from-cyan-500 to-teal-500 text-white text-sm px-4 py-2 rounded-md hover:opacity-90 transition'
+                    >
+                        🔗 Live Demo
                     </a>
                 </div>
             )}
         </div>
+    );
+};
 
-    )
-}
-
-export default ProjectCard
+export default ProjectCard;
