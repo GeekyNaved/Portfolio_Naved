@@ -51,7 +51,7 @@ const ProjectsSection = () => {
       title: "PathEd",
       description:
         "PathEd is a React Native app designed as a comprehensive Learning Management System (LMS). It allows users to be tutors or learners, offering features like watching courses, purchasing them, adding to the cart or favorites, and signing in via Google. With a seamless user experience, PathEd provides a versatile platform for online learning and teaching, enhancing accessibility and engagement in the educational ecosystem.",
-      link: "https://www.mediafire.com/file/52372a6i7jyj7cr/PathEd-v3.apk/file",
+      link: "https://play.google.com/store/apps/details?id=com.pathed",
       techStack: "Mobile App",
     },
     {
