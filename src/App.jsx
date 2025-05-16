@@ -3,6 +3,7 @@ import Footer from "./components/Footer";
 import HeroSection from "./components/HeroSection";
 import Navbar from "./components/Navbar";
 import ProjectsSection from "./components/ProjectsSection";
+import ChatButton from "./components/ChatButton";
 
 function App() {
   return (
@@ -12,6 +13,7 @@ function App() {
       <AboutSection />
       <ProjectsSection />
       <Footer />
+      <ChatButton />
     </main>
   );
 }
