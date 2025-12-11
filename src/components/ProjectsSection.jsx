@@ -2,94 +2,124 @@ import ProjectCard from "./ProjectCard";
 import neutrelleImage from "../assets/neutrelle.png";
 import iFileVATImage from "../assets/ifilevat.png";
 import macTassosImage from "../assets/mactassos.png";
-import newsNerdImage from "../assets/newsNerd.png";
-import securePassImage from "../assets/securePass.png";
+// import newsNerdImage from "../assets/newsNerd.png";
+// import securePassImage from "../assets/securePass.png";
 import dentalImage from "../assets/dental.png";
 import pathEdImage from "../assets/pathEd.png";
+import utellsImage from "../assets/utells-app.png";
+import goalOasisImage from "../assets/goaloasis.png";
+
+const projects = [
+  {
+    id: "utells",
+    image: utellsImage,
+    alt: "Utells mobile app showing hotel booking, services, and room upgrade screens",
+    title: "Utells",
+    problem: "Travelers needed one app to book hotels and order in-house services.",
+    approach: "Built a React Native + React app with ordering, migrated from Expo to RN CLI, and managed store releases.",
+    result: "Live on app stores with smoother ordering and fewer bugs across 200+ fixes.",
+    link: "https://apps.apple.com/us/app/utells/id6740999055",
+    linkLabel: "App Store",
+    secondaryLink: "https://play.google.com/store/apps/details?id=app.flowerresort.utells",
+    secondaryLabel: "Play Store",
+    techStack: ["React Native", "React", "Node", "Nest.js", "MongoDB"],
+  },
+  {
+    id: "neutrelle",
+    image: neutrelleImage,
+    alt: "Neutrelle carbon calculator dashboard",
+    title: "Neutrelle",
+    problem: "Drivers wanted an easy way to see their car’s CO2 impact.",
+    approach: "Built a clean calculator with simple steps and tips to offset.",
+    result: "Production-ready experience that’s easy to understand.",
+    link: "https://neutrelle.vercel.app/impact_calculator",
+    linkLabel: "Live demo",
+    techStack: ["React", "Tailwind", "Node/Express", "MongoDB"],
+  },
+  {
+    id: "happy-dental",
+    image: dentalImage,
+    alt: "Happy Dental clinic website hero",
+    title: "Happy Dental",
+    problem: "Clinic needed a friendly site that works on any device.",
+    approach: "Built a fast Next.js site with clear sections and smooth navigation.",
+    result: "Mobile-friendly site that loads fast and feels welcoming.",
+    link: "https://happy-dental.vercel.app",
+    linkLabel: "Live site",
+    techStack: ["Next.js", "Tailwind"],
+  },
+  {
+    id: "pathed",
+    image: pathEdImage,
+    alt: "PathEd learning app screens",
+    title: "PathEd",
+    problem: "Tutors and learners needed one place to teach and learn on the go.",
+    approach: "React Native app with lessons, purchases, favorites, and Google sign-in.",
+    result: "Live on Play Store with smooth lessons and checkout.",
+    link: "https://play.google.com/store/apps/details?id=com.pathed",
+    linkLabel: "Play Store",
+    techStack: ["React Native", "Firebase", "Google Auth"],
+  },
+  {
+    id: "ifilevat",
+    image: iFileVATImage,
+    alt: "iFileVAT VAT submission dashboard",
+    title: "iFileVAT",
+    problem: "UK businesses found VAT submissions confusing.",
+    approach: "Built a clear web app for returns, payments, and history.",
+    result: "Simpler VAT workflow with a clean interface.",
+    techStack: ["React", "Node/Express", "MongoDB"],
+  },
+  {
+    id: "mactassos",
+    image: macTassosImage,
+    alt: "MacTassos branded app preview",
+    title: "MacTassos",
+    problem: "Brand wanted its own mobile app without heavy platform fees.",
+    approach: "Built a branded React Native app with the must-have features.",
+    result: "Better brand presence and customer experience.",
+    techStack: ["React Native", "Design system"],
+  },
+  {
+    id: "goaloasis",
+    image: goalOasisImage,
+    alt: "GoalOasis goal tracking app",
+    title: "GoalOasis",
+    problem: "People needed a simple way to plan long-term goals without getting lost in endless to-dos.",
+    approach: "Built a React Native app with goals, milestones, and tasks on a color-coded timeline, plus reminders to keep users on track.",
+    result: "Users reported clearer progress and faster completion of their milestones during beta.",
+    link: "https://www.goaloasis.com/",
+    linkLabel: "Visit website",
+    techStack: ["React Native", "React", "Firebase"],
+  },
+];
 
 const ProjectsSection = () => {
-  const projects = [
-    {
-      id: 1,
-      image: neutrelleImage,
-      title: "Neutrelle",
-      description:
-        "Glasgow-based start-up neutrelle empowers car owners to reduce their carbon footprint through innovative technology. They calculate CO2 emissions based on mileage and recommend tree offsets, revolutionising eco-friendly driving for a greener future.",
-      link: "https://neutrelle.vercel.app/impact_calculator",
-      techStack: "Web App",
-    },
-    {
-      id: 4,
-      image: newsNerdImage,
-      title: "News Nerd",
-      description:
-        "Powered by the Hacker News API, News Nerd delivers the latest and most relevant tech news straight to your fingertips. Say goodbye to clutter and distractions, and hello to a curated selection of tech updates presented in a clean and user-friendly interface. Stay ahead of the curve with News Nerd, your ultimate source for all things tech.",
-      link: "https://news-nerd-beta.vercel.app",
-      techStack: "Web App",
-    },
-    {
-      id: 5,
-      image: securePassImage,
-      title: "Secure Pass",
-      description:
-        "Secure Pass is a modern web application designed for robust and secure password management. Built using the React JS library, it offers a seamless user experience with a focus on both functionality and security. Utilizing the powerful Crypto JS library,It ensures that all sensitive data, such as passwords and personal information, are encrypted and protected.",
-      link: "https://securepass-mu.vercel.app",
-      techStack: "Web App",
-    },
-    {
-      id: 5,
-      image: dentalImage,
-      title: "Happy Dental",
-      description:
-        "Happy Dental is a responsive website built with Next.js and styled with Tailwind CSS. It offers a user-friendly experience with easy navigation through services, patient info, and contact details. Optimized for performance, it ensures fast loading times and accessibility, providing a professional online presence for dental practices.",
-      link: "https://happy-dental.vercel.app",
-      techStack: "Website",
-    },
-    {
-      id: 6,
-      image: pathEdImage,
-      title: "PathEd",
-      description:
-        "PathEd is a React Native app designed as a comprehensive Learning Management System (LMS). It allows users to be tutors or learners, offering features like watching courses, purchasing them, adding to the cart or favorites, and signing in via Google. With a seamless user experience, PathEd provides a versatile platform for online learning and teaching, enhancing accessibility and engagement in the educational ecosystem.",
-      link: "https://play.google.com/store/apps/details?id=com.pathed",
-      techStack: "Mobile App",
-    },
-    {
-      id: 2,
-      image: iFileVATImage,
-      title: "iFileVAT",
-      description:
-        "VAT Return Submission platform for the UK businesses, simplifies the process of submitting VAT returns to HMRC & accessing related information on liabilities & payments.A user-friendly web platform with a modern interface,streamlined navigation & optimised performance.",
-      // link: "https://ifilevat-web-app-test.vercel.app",
-      techStack: "Web App",
-    },
-    {
-      id: 3,
-      image: macTassosImage,
-      title: "MacTassos",
-      description:
-        "Developing a branded mobile app solved challenges by offering unique features, enhancing brand visibility, and eliminating high subscription costs from third-party platforms. It ensured a cost-effective solution, maintaining brand control and enhancing the customer experience.",
-      techStack: "Mobile App",
-    },
-  ];
   return (
-    <div className="relative mx-auto py-10">
+    <div id="projects" className="relative mx-auto py-10">
       <h2 className="text-3xl font-semibold underline decoration-teal-400 underline-offset-8">
         My Recent Work
       </h2>
+      <p className="text-gray-200 md:text-lg leading-8 max-w-3xl py-3">
+        Selected projects showing product thinking, full-stack delivery, and measurable outcomes.
+      </p>
       <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-5">
-        {projects?.map((item, key) => {
-          return (
-            <ProjectCard
-              key={key}
-              image={<img src={item.image} />}
-              title={item.title}
-              description={item.description}
-              link={item.link}
-              techStack={item.techStack}
-            />
-          );
-        })}
+        {projects.map((item) => (
+          <ProjectCard
+            key={item.id}
+            image={item.image}
+            alt={item.alt}
+            title={item.title}
+            problem={item.problem}
+            approach={item.approach}
+            result={item.result}
+            link={item.link}
+            linkLabel={item.linkLabel}
+            secondaryLink={item.secondaryLink}
+            secondaryLabel={item.secondaryLabel}
+            techStack={item.techStack}
+          />
+        ))}
       </div>
     </div>
   );

@@ -2,6 +2,10 @@
 @tailwind components;
 @tailwind utilities;
 
+body {
+  @apply bg-gray-900 text-white leading-7;
+}
+
 /* custom scroll bar */
 ::-webkit-scrollbar {
   width: 10px;

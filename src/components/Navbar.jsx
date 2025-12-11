@@ -9,12 +9,22 @@ const Navbar = () => {
         </span>
         K
       </h4>
-      <a href={Naved_Ahmed_Khan_Resume} className="flex items-center gap-2 bg-gradient-to-r from-cyan-500 text- to-teal-500 text-white px-4 py-2 border-none rounded-md hover:scale-125 transition-all" download>
-        <FiDownload />
-        <button>
-          Resume
-        </button>
-      </a>
+      <div className="flex items-center gap-3">
+        <a
+          href="#contact"
+          className="hidden md:inline-flex items-center px-4 py-2 rounded-md border border-gray-700 text-white hover:border-teal-400 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-teal-400 focus:ring-offset-gray-900"
+        >
+          Contact
+        </a>
+        <a
+          href={Naved_Ahmed_Khan_Resume}
+          className="flex items-center gap-2 bg-gradient-to-r from-cyan-500 to-teal-500 text-white px-4 py-2 border-none rounded-md hover:scale-105 transition-all focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-teal-400 focus:ring-offset-gray-900"
+          download
+        >
+          <FiDownload aria-hidden="true" />
+          <span>Resume</span>
+        </a>
+      </div>
     </div>
   );
 };
