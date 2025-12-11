@@ -1,4 +1,3 @@
-import React from 'react'
 import SocialLinksGroup from './SocialLinksGroup'
 import Email from './Email'
 
