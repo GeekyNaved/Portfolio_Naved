@@ -88,8 +88,6 @@ const projects = [
     problem: "People needed a simple way to plan long-term goals without getting lost in endless to-dos.",
     approach: "Built a React Native app with goals, milestones, and tasks on a color-coded timeline, plus reminders to keep users on track.",
     result: "Users reported clearer progress and faster completion of their milestones during beta.",
-    link: "https://www.goaloasis.com/",
-    linkLabel: "Visit website",
     techStack: ["React Native", "React", "Firebase"],
   },
 ];
