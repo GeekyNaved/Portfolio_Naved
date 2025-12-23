@@ -80,16 +80,16 @@ const projects = [
     result: "Better brand presence and customer experience.",
     techStack: ["React Native", "Design system"],
   },
-  {
-    id: "goaloasis",
-    image: goalOasisImage,
-    alt: "GoalOasis goal tracking app",
-    title: "GoalOasis",
-    problem: "People needed a simple way to plan long-term goals without getting lost in endless to-dos.",
-    approach: "Built a React Native app with goals, milestones, and tasks on a color-coded timeline, plus reminders to keep users on track.",
-    result: "Users reported clearer progress and faster completion of their milestones during beta.",
-    techStack: ["React Native", "React", "Firebase"],
-  },
+  // {
+  //   id: "goaloasis",
+  //   image: goalOasisImage,
+  //   alt: "GoalOasis goal tracking app",
+  //   title: "GoalOasis",
+  //   problem: "People needed a simple way to plan long-term goals without getting lost in endless to-dos.",
+  //   approach: "Built a React Native app with goals, milestones, and tasks on a color-coded timeline, plus reminders to keep users on track.",
+  //   result: "Users reported clearer progress and faster completion of their milestones during beta.",
+  //   techStack: ["React Native", "React", "Firebase"],
+  // },
 ];
 
 const ProjectsSection = () => {
