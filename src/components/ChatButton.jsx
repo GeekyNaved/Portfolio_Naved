@@ -5,29 +5,30 @@ const ChatButton = () => {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
-    <div className="fixed bottom-4 right-4 z-50 flex flex-col items-end gap-2">
+    <div className="fixed z-40 bottom-[max(1rem,env(safe-area-inset-bottom))] right-[max(1rem,env(safe-area-inset-right))] sm:bottom-6 sm:right-6 flex flex-col items-end gap-2 max-w-[calc(100vw-2rem)]">
       {isOpen && (
-        <div className="animate-fadeIn bg-gray-900/90 text-white border border-gray-700 rounded-xl shadow-2xl p-4 w-72 md:w-80 space-y-3 backdrop-blur-sm">
+        <div className="animate-fadeIn bg-gray-900/95 text-white border border-gray-700 rounded-xl shadow-2xl p-4 w-72 md:w-80 max-w-full max-h-[min(24rem,calc(100vh-8rem))] overflow-y-auto space-y-3 backdrop-blur-sm">
           <div className="text-sm text-gray-200">
             Need something quickly? Pick an option below.
           </div>
           <div className="flex flex-col gap-2">
             <a
               href="#contact"
-              className="w-full text-left px-4 py-2 rounded-md bg-teal-600 hover:bg-teal-500 transition focus:outline-none focus:ring-2 focus:ring-teal-300 focus:ring-offset-2 focus:ring-offset-gray-900"
+              onClick={() => setIsOpen(false)}
+              className="btn-primary w-full text-left px-4 py-2.5 rounded-md"
             >
               Share project details
             </a>
             <a
               href="mailto:navedahmed040@gmail.com?subject=Project inquiry"
-              className="w-full text-left px-4 py-2 rounded-md border border-gray-600 hover:border-teal-400 transition focus:outline-none focus:ring-2 focus:ring-teal-300 focus:ring-offset-2 focus:ring-offset-gray-900"
+              className="btn-secondary w-full text-left px-4 py-2.5"
             >
               Email me directly
             </a>
             <a
               href={Naved_Ahmed_Khan_Resume}
               download
-              className="w-full text-left px-4 py-2 rounded-md border border-gray-600 hover:border-teal-400 transition focus:outline-none focus:ring-2 focus:ring-teal-300 focus:ring-offset-2 focus:ring-offset-gray-900"
+              className="btn-secondary w-full text-left px-4 py-2.5"
             >
               Download my resume
             </a>
@@ -41,7 +42,7 @@ const ChatButton = () => {
         onClick={() => setIsOpen(!isOpen)}
         aria-label="Toggle quick actions"
         aria-expanded={isOpen}
-        className="group relative flex items-center gap-2 bg-gradient-to-r from-cyan-500 to-teal-500 hover:from-cyan-600 hover:to-teal-600 text-white px-6 py-3 rounded-full shadow-lg transition-all duration-300 ease-in-out focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-teal-400 focus:ring-offset-gray-900"
+        className="btn-primary px-5 py-3 sm:px-6 rounded-full shadow-lg transition-all duration-300 ease-in-out"
       >
         <span className="relative z-10">
           {isOpen ? "Close panel" : "Quick actions"}
@@ -52,6 +53,7 @@ const ChatButton = () => {
           fill="none"
           viewBox="0 0 24 24"
           stroke="currentColor"
+          aria-hidden="true"
         >
           <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
         </svg>

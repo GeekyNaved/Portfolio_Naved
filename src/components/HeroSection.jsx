@@ -1,5 +1,6 @@
 import SocialLinksGroup from "./SocialLinksGroup";
-import myImg from "../assets/dev-ed-wave.png"
+import myImg from "../assets/dev-ed-wave.png";
+
 const HeroSection = () => {
   return (
     <div className="relative text-center px-6 py-10 md:p-14 space-y-6">
@@ -7,20 +8,21 @@ const HeroSection = () => {
         <h1 className="text-5xl py-2 text-teal-400 md:text-6xl">Naved Ahmed Khan</h1>
         <p className="text-2xl md:text-3xl font-semibold">Full-stack React & React Native Engineer</p>
         <p className="text-md text-gray-200 mx-auto max-w-2xl leading-8 md:text-xl">
-          I help teams launch web and mobile apps quickly with clean design and stable code. Recent work: fewer app crashes, happier users, and faster releases.
+          I help teams launch web and mobile apps that drive real results—fewer crashes, faster releases,
+          and products users actually stick with.
         </p>
       </div>
       <SocialLinksGroup />
       <div className="flex flex-wrap gap-3 justify-center">
         <a
           href="#contact"
-          className="bg-gradient-to-r from-cyan-500 to-teal-500 text-white px-9 py-3 border-none rounded-md text-md md:text-xl shadow-lg hover:opacity-90 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-teal-400 focus:ring-offset-gray-900"
+          className="btn-primary px-9 py-3 rounded-md text-md md:text-xl"
         >
           Book a call
         </a>
         <a
           href="#services"
-          className="px-9 py-3 rounded-md border border-gray-700 text-white text-md md:text-xl hover:border-teal-400 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-teal-400 focus:ring-offset-gray-900"
+          className="btn-secondary px-9 py-3 text-md md:text-xl"
         >
           View services
         </a>

@@ -12,15 +12,15 @@ import ContactSection from "./components/ContactSection";
 
 function App() {
   return (
-    <main className="font-quicksand px-5 md:px-8 bg-gray-900 text-white min-h-screen">
+    <main className="font-quicksand px-5 md:px-8 bg-gray-900 text-white min-h-screen pb-6">
       <Navbar />
       <HeroSection />
       <ServicesSection />
+      <AboutSection />
       <ProjectsSection />
       <ExperienceSection />
       <SkillsSection />
       <ProcessSection />
-      <AboutSection />
       <ContactSection />
       <Footer />
       <ChatButton />

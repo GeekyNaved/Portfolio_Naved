@@ -1,13 +1,21 @@
 import { useMemo, useState } from "react";
 
-const initialState = { name: "", email: "", projectType: "", budget: "", timeline: "", message: "" };
+const defaultChoice = "Not sure yet / Let's discuss";
+const initialState = {
+  name: "",
+  email: "",
+  projectType: defaultChoice,
+  budget: defaultChoice,
+  timeline: defaultChoice,
+  message: "",
+};
 
 const ContactSection = () => {
   const [form, setForm] = useState(initialState);
   const [error, setError] = useState("");
 
   const isValid = useMemo(() => {
-    return form.name.trim().length > 1 && form.email.includes("@") && form.projectType && form.budget && form.timeline;
+    return form.name.trim().length > 1 && form.email.includes("@");
   }, [form]);
 
   const handleChange = (e) => {
@@ -18,7 +26,7 @@ const ContactSection = () => {
   const handleSubmit = (e) => {
     e.preventDefault();
     if (!isValid) {
-      setError("Please fill required fields: name, email, project type, budget, timeline.");
+      setError("Please add your name and a valid email address.");
       return;
     }
     setError("");
@@ -30,13 +38,16 @@ const ContactSection = () => {
   };
 
   return (
-    <section id="contact" className="relative mx-auto py-10 space-y-6">
+    <section id="contact" className="relative mx-auto py-10 pb-32 sm:pb-36 space-y-6 scroll-mt-24">
       <div className="flex flex-col gap-3">
         <h2 className="text-3xl font-semibold underline decoration-teal-400 underline-offset-8">
           Let’s Talk
         </h2>
         <p className="text-gray-200 md:text-lg leading-8 max-w-3xl">
           Share what you need and I’ll respond within a day with next steps.
+        </p>
+        <p className="text-sm md:text-base text-teal-200/90 max-w-3xl leading-7">
+          Just have a quick question or want an informal chat? Drop an email or book a 15-min intro call.
         </p>
       </div>
 
@@ -69,15 +80,14 @@ const ContactSection = () => {
           </div>
           <div className="grid md:grid-cols-2 gap-4">
             <label className="flex flex-col gap-2 text-sm text-gray-200">
-              Project type*
+              Project type <span className="text-gray-400">(optional)</span>
               <select
                 name="projectType"
                 value={form.projectType}
                 onChange={handleChange}
                 className="rounded-md px-3 py-2 bg-gray-900 border border-gray-700 text-white focus:outline-none focus:ring-2 focus:ring-teal-400"
-                required
               >
-                <option value="">Select</option>
+                <option>{defaultChoice}</option>
                 <option>React/Next.js Web App</option>
                 <option>React Native Mobile App</option>
                 <option>Backend APIs</option>
@@ -85,15 +95,14 @@ const ContactSection = () => {
               </select>
             </label>
             <label className="flex flex-col gap-2 text-sm text-gray-200">
-              Budget (USD)*
+              Budget (USD) <span className="text-gray-400">(optional)</span>
               <select
                 name="budget"
                 value={form.budget}
                 onChange={handleChange}
                 className="rounded-md px-3 py-2 bg-gray-900 border border-gray-700 text-white focus:outline-none focus:ring-2 focus:ring-teal-400"
-                required
               >
-                <option value="">Select</option>
+                <option>{defaultChoice}</option>
                 <option>$1k - $2k</option>
                 <option>$2k - $4k</option>
                 <option>$4k - $7k</option>
@@ -103,15 +112,14 @@ const ContactSection = () => {
           </div>
           <div className="grid md:grid-cols-2 gap-4">
             <label className="flex flex-col gap-2 text-sm text-gray-200">
-              Timeline*
+              Timeline <span className="text-gray-400">(optional)</span>
               <select
                 name="timeline"
                 value={form.timeline}
                 onChange={handleChange}
                 className="rounded-md px-3 py-2 bg-gray-900 border border-gray-700 text-white focus:outline-none focus:ring-2 focus:ring-teal-400"
-                required
               >
-                <option value="">Select</option>
+                <option>{defaultChoice}</option>
                 <option>2-4 weeks</option>
                 <option>4-8 weeks</option>
                 <option>8+ weeks</option>
@@ -131,16 +139,10 @@ const ContactSection = () => {
           </div>
           {error && <p className="text-red-400 text-sm">{error}</p>}
           <div className="flex flex-wrap gap-3">
-            <button
-              type="submit"
-              className="bg-gradient-to-r from-cyan-500 to-teal-500 text-white px-6 py-3 rounded-md font-semibold hover:opacity-90 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-teal-400 focus:ring-offset-gray-900"
-            >
+            <button type="submit" className="btn-primary px-6 py-3 rounded-md">
               Book a call
             </button>
-            <a
-              href="mailto:navedahmed040@gmail.com"
-              className="px-6 py-3 rounded-md border border-gray-700 text-white hover:border-teal-400 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-teal-400 focus:ring-offset-gray-900"
-            >
+            <a href="mailto:navedahmed040@gmail.com" className="btn-secondary px-6 py-3">
               Email directly
             </a>
           </div>
@@ -148,7 +150,7 @@ const ContactSection = () => {
 
         <div className="bg-gray-800/70 border border-gray-700 rounded-2xl p-5 shadow-lg space-y-3">
           <h3 className="text-xl font-semibold text-white">Availability</h3>
-            <p className="text-gray-200 text-sm leading-6">
+          <p className="text-gray-200 text-sm leading-6">
             20–30 hrs/week • Replies within 24 hours • Timezone: IST (overlaps with EU/UK/US East).
           </p>
           <div className="space-y-2 text-sm text-gray-200">
@@ -169,4 +171,3 @@ const ContactSection = () => {
 };
 
 export default ContactSection;
-

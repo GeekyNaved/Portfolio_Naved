@@ -1,26 +1,26 @@
 const services = [
   {
     title: "MVP Build (Web + Mobile)",
-    scope: "Take your idea to a working app with sign-up, core screens, and payments.",
-    highlights: ["Web + mobile together", "Release-ready builds", "Clean handoff & docs"],
+    scope: "Take your idea to market faster with sign-up, core screens, and payments—so you can validate with real users sooner.",
+    highlights: ["Faster time to market", "Release-ready builds", "Clean handoff & docs"],
     deliverables: ["React/Next.js web", "React Native app shell", "Backend APIs (Node/Express)", "Handoff docs"],
   },
   {
     title: "React Native Release",
-    scope: "Get your mobile app store-ready or steady if it’s already live.",
-    highlights: ["Fewer crashes", "Store-friendly builds", "Analytics ready"],
+    scope: "Stabilize and ship your mobile app with fewer crashes, smoother releases, and store-ready builds.",
+    highlights: ["Reduced crash rates", "Store-friendly builds", "Analytics ready"],
     deliverables: ["Crash fixes", "Store-ready builds", "In-app analytics", "Performance tune-up"],
   },
   {
     title: "Web App Revamp",
-    scope: "Make your web app cleaner, faster, and easier to use.",
-    highlights: ["Sharper UI", "More accessible", "Faster load"],
+    scope: "Make your web app cleaner, faster, and easier to use—so visitors convert instead of bouncing.",
+    highlights: ["Sharper UI", "More accessible", "Up to 40% faster loads"],
     deliverables: ["UI refresh", "Accessibility fixes", "Performance pass", "Reusable components"],
   },
   {
     title: "Backend APIs",
-    scope: "APIs that are safe, documented, and ready for your frontend to plug into.",
-    highlights: ["Secure by default", "Logging included", "Clear API docs"],
+    scope: "APIs that are safe, documented, and ready for your frontend—so features ship without backend bottlenecks.",
+    highlights: ["Secure by default", "Logging included", "Faster feature delivery"],
     deliverables: ["Node/Express services", "MongoDB schema", "Auth + validation", "Docs + handoff"],
   },
 ];
@@ -33,7 +33,8 @@ const ServicesSection = () => {
           Services
         </h2>
         <p className="text-gray-200 md:text-lg max-w-3xl leading-8">
-          Simple packages founders can pick and start with—clear scope, steady updates, and quick replies.
+          Packages built for founders who care about speed, clarity, and real business outcomes—not just code.
+          Clear scope, steady updates, and measurable results.
         </p>
       </div>
       <div className="grid md:grid-cols-2 gap-5">
@@ -68,4 +69,3 @@ const ServicesSection = () => {
 };
 
 export default ServicesSection;
-
