@@ -1,5 +1,5 @@
 import SocialLinksGroup from "./SocialLinksGroup";
-import myImg from "../assets/dev-ed-wave.png";
+import myImg from "../assets/naved.jpg";
 
 const HeroSection = () => {
   return (
