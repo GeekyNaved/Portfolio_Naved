@@ -1,4 +1,5 @@
 import ProjectCard from "./ProjectCard";
+import ddpImage from "../assets/ddp.png";
 import neutrelleImage from "../assets/neutrelle.png";
 import iFileVATImage from "../assets/ifilevat.png";
 import macTassosImage from "../assets/mactassos.png";
@@ -10,6 +11,20 @@ import utellsImage from "../assets/utells-app.png";
 import goalOasisImage from "../assets/goaloasis.png";
 
 const projects = [
+  {
+    id: "dar-ul-dawa",
+    image: ddpImage,
+    alt: "DAR-UL-DAWA OPC Ltd pharmaceutical product portal homepage",
+    title: "DAR-UL-DAWA OPC Ltd",
+    problem:
+      "Pharmaceutical distributor needed a professional site to showcase products and reach healthcare providers.",
+    approach:
+      "Built a fast web app with category browsing and an admin CMS for seamless product updates.",
+    result:
+      "Responsive portal with clear product details, packaging info, and contact options on any device.",
+    link: "https://www.daruldawapharmulations.com",
+    linkLabel: "Live demo",
+  },
   {
     id: "utells",
     image: utellsImage,
